@@ -3,7 +3,7 @@ from deployment import recommendation_knn
 app=Flask(__name__)
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('page.html')
 @app.route('/recommend',methods=['POST'])
 def predict():
     try:
