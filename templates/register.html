@@ -2,10 +2,16 @@
   <head>
     <meta charset="utf-8">
     <title>Form</title>
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="styleregis.css">
+	<link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='css/styleregis.css') }}"
+      rel="stylesheet"
+    />
   </head>
-  <body background="logo1.jpeg",background-repeat: no-repeat,
+  <body background="{{ url_for('static', filename='images/logo1.jpeg') }}",background-repeat: no-repeat,
   background-attachment: fixed,
   background-size: 100% 100%>
 
@@ -75,7 +81,7 @@
 
     		<!---Submit Button------>
     		<div class="box">
-    				<a href="file:///C:/Users/NEMANI%20DIVYA%20SRI/Desktop/mini%20project/page.html"><p style="text-align:right","color:White">SUBMIT</p></a>
+    				<a href="page.html"><p style="text-align:right","color:White">SUBMIT</p></a>
     		</div>
     		<!---Submit Button----->
       </form>
