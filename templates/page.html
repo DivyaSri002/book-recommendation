@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='css/styleregis.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    background="logo1.jpeg"
+    ,background-repeat:
+    no-repeat,
+    background-attachment:
+    fixed,
+    background-size:
+    100%
+    100%
+  >
+    <!-- Body of Form starts -->
+    <div class="container">
+      <form method="post" autocomplete="on">
+        <!--Name-->
+        <div class="box">
+          <label for="Genre" class="fl fontLabel"> Genre: </label>
+          <div class="new iconBox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+          <div class="fr">
+            <input
+              type="text"
+              name="Genre"
+              placeholder="Genre"
+              class="textBox"
+            />
+          </div>
+          <div class="clr"></div>
+        </div>
+        <!--Name-->
+        <div class="box">
+          <label for="Author" class="fl fontLabel"> Author: </label>
+          <div class="new iconBox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+          <div class="fr">
+            <input
+              type="text"
+              name="Author"
+              placeholder="Author"
+              class="textBox"
+            />
+          </div>
+          <div class="clr"></div>
+        </div>
+
+        <!---Submit Button------>
+        <div class="box">
+          <input type="Submit" name="Register" class="submit" value="SHOW"
+          onclick=href "">
+        </div>
+        <!---Submit Button----->
+      </form>
+    </div>
+    <!--Body of Form ends--->
+  </body>
+</html>
